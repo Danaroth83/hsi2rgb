@@ -19,13 +19,14 @@ and then generate numpy arrays in the ```data/outputs``` folder.
 
 The generated numpy arrays are listed below:
 
-- ```hsi.npy```: The original hyperspectral image in row, column, channel format
-- ```wavelengths.npy```: a list of the wavelengths of the hyperspectral image
-- ```rgb.npy```: a RGB representation of the original dataset
+- ```hsi.npy```: The original hyperspectral image in row, column, channel format;
+- ```wavelengths.npy```: a list of the wavelengths of the hyperspectral image;
+- ```rgb.npy```: a RGB representation of the original dataset;
+- ```rgb.png```: The same RGB representation in PNG format.
 
 It is also possible to generate a cropped version of the rgb image, which is useful when the original datasets are too large.
 For example:
-```python src/main.py --i "chikusei" --x (200, 712) --y (200, 712)```
+```python src/hsi2rgb.py --i "chikusei" --x (200, 712) --y (200, 712)```
 crops the ```"chikusei"``` dataset in the given coordinates.
 
 
