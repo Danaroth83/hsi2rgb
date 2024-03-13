@@ -1,15 +1,15 @@
 # hsi2rgb
 
 hsi2rgb is a library for the representation of classical hyperspectral datasets into RGB images.
-The library employs a CIE 1931 color matching function, using the D6500 standard illuminator and a gamma correction.
+The library employs a CIE 1931 tristimulus color matching function, with the D6500 standard illuminator, and a gamma correction.
 
-## Usage
+## How to use
 
 This library requires Python 3.9+; the dependencies can be installed using:
 
 ```pip install -r requirements.txt```
 
-Then the script can be started by running:
+Then the script can be launched by running the following line in the terminal:
 
 ```python src/hsi2rgb.py --i "pavia"```
 
@@ -26,8 +26,10 @@ The generated numpy arrays are listed below:
 
 It is also possible to generate a cropped version of the rgb image, which is useful when the original datasets are too large.
 For example:
+
 ```python src/hsi2rgb.py --i "chikusei" --x (200, 712) --y (200, 712)```
-crops the ```"chikusei"``` dataset in the given coordinates.
+
+crops the ```"chikusei"``` dataset in the coordinates ranges given by the ```--x``` and ```--y``` options.
 
 
 ## Dataset list
@@ -43,13 +45,13 @@ crops the ```"chikusei"``` dataset in the given coordinates.
 - ```"samson"```
 - ```"urban"```
 
-The credits and licenses (where available) for the each dataset are included in the readme file downloaded in ```data/external```.
+The acknowledgments and licenses (where available) for each dataset are included in the readme file downloaded together with the data in ```data/external```.
 
-## Credits
+## Acknowledgments
 
 The implemented method is very well known specification given by the [CIE standards](https://standards.iteh.ai/catalog/tc/iso/23b8ea7c-5d92-446b-afd6-3dcd4a01fefc/cie).
 Variations of this method are given on [this website](https://personalpages.manchester.ac.uk/staff/d.h.foster/Tutorial_HSI2RGB/Tutorial_HSI2RGB.html).
-The specific implementation implemented in this library is also present on ```[Magnusson et al., IGARSS 2020]```.
+The specific implementation used in this library is also present on ```[Magnusson et al., IGARSS 2020]```.
 If you find this library useful in your scientific publications, please cite:
 
 ```bibtex
