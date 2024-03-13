@@ -11,7 +11,7 @@ This library requires Python 3.9+; the dependencies can be installed using:
 
 Then the script can be started by running:
 
-```python src/main.py --i "pavia"```
+```python src/hsi2rgb.py --i "pavia"```
 
 where ```"pavia"``` is an example of a dataset name. The user can choose any of the datasets listed in the "Dataset list" section.
 The script will download the raw dataset in the folder ```data/external```
