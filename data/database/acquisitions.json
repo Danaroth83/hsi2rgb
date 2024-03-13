@@ -1,0 +1,75 @@
+[
+    {
+        "id": 0,
+        "dataset_id": "botswana",
+        "file_name": "Botswana.mat",
+        "format": "mat_file",
+        "key": "Botswana",
+        "excluded_bands": [[0, 9], [55, 81], [97, 101], [119, 133], [164, 186], [220, 242]]
+    },
+    {
+        "id": 1,
+        "dataset_id": "indian_pines",
+        "file_name": "Indian_pines_corrected.mat",
+        "format": "mat_file",
+        "key": "indian_pines_corrected",
+        "excluded_bands": [[0, 1], [32, 33], [96, 97], [106, 111], [152, 167], [223, 224]]
+    },
+    {
+        "id": 2,
+        "dataset_id": "kennedy_space_center",
+        "file_name": "KSC_corrected.mat",
+        "format": "mat_file",
+        "key": "KSC",
+        "excluded_bands": [[0, 4], [101, 116], [150, 172], [217, 224]]
+    },
+    {
+        "id": 3,
+        "dataset_id": "pavia",
+        "file_name": "PaviaU.mat",
+        "format": "mat_file",
+        "key": "paviaU"
+    },
+    {
+        "id": 4,
+        "dataset_id": "salinas",
+        "file_name": "Salinas_corrected.mat",
+        "format": "mat_file",
+        "key": "salinas_corrected",
+        "excluded_bands": [[107, 112], [153, 167], [223, 224]]
+    },
+    {
+        "id": 5,
+        "dataset_id": "cuprite",
+        "file_name": "Cuprite_S1_R188.hdr",
+        "format": "envi",
+        "excluded_bands": [[0, 2], [103, 113], [147, 167], [220, 224]]
+    },
+    {
+        "id": 6,
+        "dataset_id": "jasper_ridge",
+        "file_name": "jasperRidge2_R198.hdr",
+        "format": "envi",
+        "excluded_bands": [[0, 3], [107, 112], [153, 166], [219, 224]]
+    },
+    {
+        "id": 7,
+        "dataset_id": "urban",
+        "file_name": "Urban_R162.mat",
+        "format": "mat_file",
+        "key": "hsi",
+        "excluded_bands": [[0, 4], [75, 76], [86, 87], [100, 111], [135, 153], [197, 210]]
+    },
+    {
+        "id": 8,
+        "dataset_id": "samson",
+        "file_name": "samson_1.img.hdr",
+        "format": "envi"
+    },
+    {
+        "id": 9,
+        "dataset_id": "chikusei",
+        "file_name": "HyperspecVNIR_Chikusei_20140729.hdr",
+        "format": "envi"
+    }
+]

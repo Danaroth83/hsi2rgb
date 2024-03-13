@@ -1,0 +1,144 @@
+[
+    {
+        "id": "botswana",
+        "path": "data/external/botswana",
+        "url": "danaroth/botswana",
+        "device_id": "hyperion",
+        "wavelengths_file": "data/wavelengths/hyperion.csv",
+        "wavelengths_unit": "nm",
+        "bit_depth": 16,
+        "rgb": [28, 22, 15]
+    },
+    {
+        "id": "cave",
+        "path": "data/external/cave",
+        "url": "danaroth/cave",
+        "device_id": "varispec",
+        "wavelengths_file": "data/wavelengths/varispec.csv",
+        "wavelengths_unit": "nm",
+        "bit_depth": 16,
+        "dim_order": [0, 1, 3, 2],
+        "rgb": [22, 15, 5]
+    },
+    {
+        "id": "chikusei",
+        "path": "data/external/chikusei",
+        "url": "danaroth/chikusei",
+        "device_id": "hyperspec_vnir_c",
+        "wavelengths_file": "data/wavelengths/chikusei.csv",
+        "wavelengths_unit": "nm",
+        "bit_depth": 12,
+        "rgb": [60, 40, 20]
+    },
+    {
+        "id": "cuprite",
+        "path": "data/external/cuprite",
+        "url": "danaroth/cuprite",
+        "device_id": "aviris",
+        "wavelengths_file": "data/wavelengths/aviris.csv",
+        "wavelengths_unit": "nm",
+        "bit_depth": 14,
+        "rgb": [46, 23, 13]
+    },
+    {
+        "id": "icvl",
+        "path": "data/external/icvl",
+        "url": "danaroth/icvl",
+        "device_id": "specim",
+        "wavelengths_file": "data/wavelengths/moffett_field.csv",
+        "wavelengths_unit": "nm",
+        "bit_depth": 16,
+        "rgb": [70, 53, 19]
+    },
+    {
+        "id": "indian_pines",
+        "path": "data/external/indian_pines",
+        "url": "danaroth/indian_pines",
+        "device_id": "aviris",
+        "wavelengths_file": "data/wavelengths/indian_pines.csv",
+        "wavelengths_unit": "nm",
+        "bit_depth": 14,
+        "rgb": [46, 23, 13]
+    },
+    {
+        "id": "jasper_ridge",
+        "path": "data/external/jasper_ridge",
+        "url": "danaroth/jasper_ridge",
+        "device_id": "aviris",
+        "wavelengths_file": "data/wavelengths/jasper_ridge.csv",
+        "wavelengths_unit": "nm",
+        "bit_depth": 14,
+        "rgb": [46, 23, 13]
+    },
+    {
+        "id": "kennedy_space_center",
+        "path": "data/external/kennedy_space_center",
+        "url": "danaroth/kennedy_space_center",
+        "device_id": "aviris",
+        "wavelengths_file": "data/wavelengths/aviris.csv",
+        "wavelengths_unit": "nm",
+        "bit_depth": 16,
+        "rgb": [46, 23, 13]
+    },
+    {
+        "id": "moffett_field",
+        "path": "data/external/moffet_field",
+        "url": "danaroth/moffett_field",
+        "device_id": "aviris",
+        "wavelengths_file": "data/wavelengths/moffett_field.csv",
+        "wavelengths_unit": "nm",
+        "bit_depth": 16,
+        "rgb": [46, 23, 13]
+    },
+    {
+        "id": "pavia",
+        "path": "data/external/pavia",
+        "url": "danaroth/pavia",
+        "device_id": "rosis",
+        "wavelengths_file": "data/wavelengths/rosis.csv",
+        "wavelengths_unit": "nm",
+        "bit_depth": 13,
+        "rgb": [59, 29, 13]
+    },
+    {
+        "id": "salinas",
+        "path": "data/external/salinas",
+        "url": "danaroth/salinas",
+        "device_id": "aviris",
+        "wavelengths_file": "data/wavelengths/aviris.csv",
+        "wavelengths_unit": "nm",
+        "bit_depth": 14,
+        "rgb": [46, 23, 13]
+    },
+    {
+        "id": "samson",
+        "path": "data/external/samson",
+        "url": "danaroth/samson",
+        "device_id": "samson",
+        "wavelengths_file": "data/wavelengths/samson.csv",
+        "wavelengths_unit": "nm",
+        "bit_depth": 11,
+        "rgb": [85, 50, 10]
+    },
+    {
+        "id": "urban",
+        "path": "data/external/urban",
+        "url": "danaroth/urban",
+        "device_id": "hydice",
+        "wavelengths_file": "data/wavelengths/hydice.csv",
+        "wavelengths_unit": "nm",
+        "bit_depth": 12,
+        "rgb": [40, 30, 10]
+    },
+    {
+        "id": "washington_dc_mall",
+        "path": "data/external/washington_dc_mall",
+        "url": "danaroth/washington_dc_mall",
+        "device_id": "hydice",
+        "wavelengths_file": "data/wavelengths/washington_dc_mall.csv",
+        "wavelengths_unit": "nm",
+        "bit_depth": 14,
+        "dim_order": [1, 2, 0, 3],
+        "rgb": [40, 30, 10]
+    }
+]

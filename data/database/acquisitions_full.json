@@ -1,0 +1,345 @@
+[
+    {
+        "id": 0,
+        "dataset_id": "cave",
+        "pattern": "balloons_ms/balloons_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 1,
+        "dataset_id": "cave",
+        "pattern": "beads_ms/beads_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 2,
+        "dataset_id": "cave",
+        "pattern": "cd_ms/cd_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 3,
+        "dataset_id": "cave",
+        "pattern": "chart_and_stuffed_toy_ms/chart_and_stuffed_toy_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 4,
+        "dataset_id": "cave",
+        "pattern": "clay_ms/clay_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 5,
+        "dataset_id": "cave",
+        "pattern": "cloth_ms/cloth_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 6,
+        "dataset_id": "cave",
+        "pattern": "egyptian_statue_ms/egyptian_statue_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 7,
+        "dataset_id": "cave",
+        "pattern": "face_ms/face_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 8,
+        "dataset_id": "cave",
+        "pattern": "fake_and_real_beers_ms/fake_and_real_beers_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 9,
+        "dataset_id": "cave",
+        "pattern": "fake_and_real_food_ms/fake_and_real_food_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 10,
+        "dataset_id": "cave",
+        "pattern": "fake_and_real_lemon_slices_ms/fake_and_real_lemon_slices_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 11,
+        "dataset_id": "cave",
+        "pattern": "fake_and_real_lemons_ms/fake_and_real_lemons_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 12,
+        "dataset_id": "cave",
+        "pattern": "fake_and_real_peppers_ms/fake_and_real_peppers_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 13,
+        "dataset_id": "cave",
+        "pattern": "fake_and_real_strawberries_ms/fake_and_real_strawberries_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 14,
+        "dataset_id": "cave",
+        "pattern": "fake_and_real_sushi_ms/fake_and_real_sushi_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 15,
+        "dataset_id": "cave",
+        "pattern": "fake_and_real_tomatoes_ms/fake_and_real_tomatoes_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 16,
+        "dataset_id": "cave",
+        "pattern": "feathers_ms/feathers_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 17,
+        "dataset_id": "cave",
+        "pattern": "flowers_ms/flowers_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 18,
+        "dataset_id": "cave",
+        "pattern": "glass_tiles_ms/glass_tiles_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 19,
+        "dataset_id": "cave",
+        "pattern": "hairs_ms/hairs_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 20,
+        "dataset_id": "cave",
+        "pattern": "jelly_beans_ms/jelly_beans_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 21,
+        "dataset_id": "cave",
+        "pattern": "oil_painting_ms/oil_painting_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 22,
+        "dataset_id": "cave",
+        "pattern": "paints_ms/paints_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 23,
+        "dataset_id": "cave",
+        "pattern": "photo_and_face_ms/photo_and_face_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 24,
+        "dataset_id": "cave",
+        "pattern": "pompoms_ms/pompoms_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 25,
+        "dataset_id": "cave",
+        "pattern": "real_and_fake_apples_ms/real_and_fake_apples_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 26,
+        "dataset_id": "cave",
+        "pattern": "real_and_fake_peppers_ms/real_and_fake_peppers_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 27,
+        "dataset_id": "cave",
+        "pattern": "sponges_ms/sponges_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 28,
+        "dataset_id": "cave",
+        "pattern": "stuffed_toys_ms/stuffed_toys_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 29,
+        "dataset_id": "cave",
+        "pattern": "superballs_ms/superballs_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 30,
+        "dataset_id": "cave",
+        "pattern": "thread_spools_ms/thread_spools_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 31,
+        "dataset_id": "cave",
+        "pattern": "watercolors_ms/watercolors_ms_\\d{2}\\.png",
+        "format": "skimage"
+    },
+    {
+        "id": 32,
+        "dataset_id": "botswana",
+        "file_name": "Botswana.mat",
+        "format": "mat_file",
+        "key": "Botswana",
+        "excluded_bands": [[0, 9], [55, 81], [97, 101], [119, 133], [164, 186], [220, 242]]
+    },
+    {
+        "id": 33,
+        "dataset_id": "cuprite",
+        "file_name": "Cuprite_f970619t01p02_r02_sc03.a.rfl.mat",
+        "format": "mat_file",
+        "key": "X"
+    },
+    {
+        "id": 34,
+        "dataset_id": "indian_pines",
+        "file_name": "Indian_pines.mat",
+        "format": "mat_file",
+        "key": "indian_pines",
+        "excluded_bands": [[0, 1], [32, 33], [96, 97], [160, 161]]
+    },
+    {
+        "id": 35,
+        "dataset_id": "indian_pines",
+        "file_name": "Indian_pines_corrected.mat",
+        "format": "mat_file",
+        "key": "indian_pines_corrected",
+        "excluded_bands": [[0, 1], [32, 33], [96, 97], [106, 111], [152, 167], [223, 224]]
+    },
+    {
+        "id": 36,
+        "dataset_id": "kennedy_space_center",
+        "file_name": "KSC.mat",
+        "format": "mat_file",
+        "key": "KSC",
+        "excluded_bands": [[0, 4], [101, 116], [150, 172], [217, 224]]
+    },
+    {
+        "id": 37,
+        "dataset_id": "kennedy_space_center",
+        "file_name": "KSC_corrected.mat",
+        "format": "mat_file",
+        "key": "KSC",
+        "excluded_bands": [[0, 4], [101, 116], [150, 172], [217, 224]]
+    },
+    {
+        "id": 38,
+        "dataset_id": "pavia",
+        "file_name": "Pavia.mat",
+        "format": "mat_file",
+        "key": "pavia",
+        "excluded_bands": [[102, 103]]
+    },
+    {
+        "id": 39,
+        "dataset_id": "pavia",
+        "file_name": "PaviaU.mat",
+        "format": "mat_file",
+        "key": "paviaU"
+    },
+    {
+        "id": 40,
+        "dataset_id": "salinas",
+        "file_name": "Salinas.mat",
+        "format": "mat_file",
+        "key": "salinas"
+    },
+    {
+        "id": 41,
+        "dataset_id": "salinas",
+        "file_name": "Salinas_corrected.mat",
+        "format": "mat_file",
+        "key": "salinas_corrected",
+        "excluded_bands": [[107, 112], [153, 167], [223, 224]]
+    },
+    {
+        "id": 42,
+        "dataset_id": "salinas",
+        "file_name": "SalinasA.mat",
+        "format": "mat_file",
+        "key": "salinasA"
+    },
+    {
+        "id": 43,
+        "dataset_id": "salinas",
+        "file_name": "SalinasA_corrected.mat",
+        "format": "mat_file",
+        "key": "salinasA_corrected",
+        "excluded_bands": [[107, 112], [153, 167], [223, 224]]
+    },
+    {
+        "id": 44,
+        "dataset_id": "cuprite",
+        "file_name": "Cuprite_S1_F224.hdr",
+        "format": "envi"
+    },
+    {
+        "id": 45,
+        "dataset_id": "cuprite",
+        "file_name": "Cuprite_S1_R188.hdr",
+        "format": "envi",
+        "excluded_bands": [[0, 2], [103, 113], [147, 167], [220, 224]]
+    },
+    {
+        "id": 46,
+        "dataset_id": "jasper_ridge",
+        "file_name": "jasperRidge2_F224.hdr",
+        "format": "envi"
+    },
+    {
+        "id": 47,
+        "dataset_id": "jasper_ridge",
+        "file_name": "jasperRidge2_R198.hdr",
+        "format": "envi",
+        "excluded_bands": [[0, 3], [107, 112], [153, 166], [219, 224]]
+    },
+    {
+        "id": 48,
+        "dataset_id": "urban",
+        "file_name": "Urban_F210.hdr",
+        "format": "envi"
+    },
+    {
+        "id": 49,
+        "dataset_id": "urban",
+        "file_name": "Urban_R162.mat",
+        "format": "mat_file",
+        "key": "hsi",
+        "excluded_bands": [[0, 4], [75, 76], [86, 87], [100, 111], [135, 153], [197, 210]]
+    },
+    {
+        "id": 50,
+        "dataset_id": "washington_dc_mall",
+        "file_name": "dc.tif",
+        "format": "skimage",
+        "excluded_bands": [[102, 106], [137, 148], [206, 210]]
+    },
+    {
+        "id": 51,
+        "dataset_id": "samson",
+        "file_name": "samson_1.img.hdr",
+        "format": "envi"
+    },
+    {
+        "id": 52,
+        "dataset_id": "chikusei",
+        "file_name": "HyperspecVNIR_Chikusei_20140729.hdr",
+        "format": "envi"
+    }
+]
