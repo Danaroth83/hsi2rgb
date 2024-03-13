@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "rgb-test"
+name = "hsi2rgb"
 version = "0.1.0"
 description = ""
 authors = ["Daniele Picone <danaroth83@gmail.com>"]

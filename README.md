@@ -47,7 +47,7 @@ The credits and licenses (where available) for the each dataset are included in 
 ## Credits
 
 The implemented method is very well known specification given by the [CIE standards](https://standards.iteh.ai/catalog/tc/iso/23b8ea7c-5d92-446b-afd6-3dcd4a01fefc/cie).
-Variations of this method are given on [this website](https://personalpages.manchester.ac.uk/staff/d.h.foster/Tutorial_HSI2RGB/Tutorial_HSI2RGB.html)
+Variations of this method are given on [this website](https://personalpages.manchester.ac.uk/staff/d.h.foster/Tutorial_HSI2RGB/Tutorial_HSI2RGB.html).
 The specific implementation implemented in this library is also present on ```[Magnusson et al., IGARSS 2020]```.
 If you find this library useful in your scientific publications, please cite:
 

@@ -86,16 +86,23 @@ def gamma_correction(rgb):
 
 def save_arrays(rgb, numpy_array, wavelengths, output_path: Path, label: str) -> None:
     save_path = output_path / label
-    save_path.mkdir(exist_ok=False)
+    save_path.mkdir(exist_ok=True)
     np.save(f"{save_path / 'rgb.npy'}", rgb)
     np.save(f"{save_path / 'hsi.npy'}", numpy_array)
     np.save(f"{save_path / 'wavelengths.npy'}", wavelengths)
+    fig, ax = plt.subplots()
+    ax.imshow((rgb * 255).astype(np.uint8))
+    ax.axis("off")
+    fig.savefig(f"{save_path / 'rgb.png'}", bbox_inches="tight", pad_inches=0)
+    plt.close(fig)
 
 
 def generate_rgb_array(
     image_label: str,
     crop_x: tuple[int, int] = None,
     crop_y: tuple[int, int] = None,
+    visualize: bool = True,
+    save: bool = True,
 ):
 
     cmf = "./data/illuminants/ciexyzjv.csv"
@@ -134,28 +141,37 @@ def generate_rgb_array(
     rgb = xyz_to_rgb(xyz)
     rgb_corrected = gamma_correction(rgb)
 
-    save_arrays(
-        rgb=rgb_corrected,
-        numpy_array=numpy_array,
-        wavelengths=wavelengths,
-        output_path=project_path / "data/outputs",
-        label=image_label,
-    )
+    if save:
+        save_arrays(
+            rgb=rgb_corrected,
+            numpy_array=numpy_array,
+            wavelengths=wavelengths,
+            output_path=project_path / "data/outputs",
+            label=image_label,
+        )
 
-    fig, ax = plt.subplots()
-    ax.imshow(gamma_correction(rgb))
-    plt.show()
+    if visualize:
+        fig, ax = plt.subplots()
+        ax.imshow(gamma_correction(rgb))
+        plt.show()
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Interpolate a curve to new samples and save to a folder")
+    parser = argparse.ArgumentParser(description="Represents a hyperspectral dataset as a RGB image. Usage: python src/hsi2rgb.py --i ""pavia""")
     parser.add_argument("--i", type=str, nargs="+", help="Image identifier", default="pavia")
-    parser.add_argument("--x", type=tuple[int, int], nargs="+", help="Cropping interval in the horizontal direction", default=None)
-    parser.add_argument("--y", type=tuple[int, int], nargs="+", help="Cropping interval in the vertical direction", default=None)
+    parser.add_argument("--x", type=tuple[int, int], nargs="+", help="Cropping interval in the horizontal direction.", default=None)
+    parser.add_argument("--y", type=tuple[int, int], nargs="+", help="Cropping interval in the vertical direction.", default=None)
+    parser.add_argument("--v", type=bool, nargs="+", help="Visualizes the RGB result.", default=True)
+    parser.add_argument("--s", type=bool, nargs="+", help="Saves the results to data/outputs.", default=True)
     args = parser.parse_args()
 
-    generate_rgb_array(image_id=args.i, crop_x=args.x, crop_y=args.y)
+    generate_rgb_array(
+        image_label=args.i,
+        crop_x=args.x,
+        crop_y=args.y,
+        visualize=args.v,
+        save=args.s,
+    )
 
 
 if __name__ == "__main__":
