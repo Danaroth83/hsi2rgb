@@ -1,7 +1,7 @@
-# hsi2rgb
+# Description
 
-hsi2rgb is a library for the representation of classical hyperspectral datasets into RGB images.
-The library employs a CIE 1931 tristimulus color matching function, with the D6500 standard illuminator, and a gamma correction.
+hsi2rgb is a Python script for the representation of widely known hyperspectral datasets for remote sensing into RGB images.
+The library employs a CIE 1931 tristimulus color matching function with the D6500 standard illuminator and applies a gamma correction.
 
 ## How to use
 
@@ -55,7 +55,7 @@ The specific implementation used in this library is also present on ```[Magnusso
 If you find this library useful in your scientific publications, please cite:
 
 ```bibtex
-@Online{web_HS2RGB,
+@Online{web_HSI2RGB,
   author  = {Daniele Picone},
   title   = {Code repository for the hsi2rgb.},
   url     = {https://github.com/Danaroth83/hsi2rgb},
