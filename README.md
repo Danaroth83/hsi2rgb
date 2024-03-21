@@ -27,9 +27,9 @@ The generated numpy arrays are listed below:
 It is also possible to generate a cropped version of the rgb image, which is useful when the original datasets are too large.
 For example:
 
-```python src/hsi2rgb.py --i "chikusei" --x (200, 712) --y (200, 712)```
+```python src/hsi2rgb.py --i "chikusei" --x 200 712 --y 200 712```
 
-crops the ```"chikusei"``` dataset in the coordinates ranges given by the ```--x``` and ```--y``` options.
+crops the ```"chikusei"``` dataset in the coordinates ranges given by the ```--x``` and ```--y``` options, that is ```(200, 712)``` in both cases.
 
 
 ## Dataset list

@@ -1,10 +1,13 @@
 from pathlib import Path
 import argparse
+import sys
 
 import numpy as np
 import pandas as pd
 import scipy
 import matplotlib.pyplot as plt
+
+sys.path.append(f"{Path(__file__).resolve().parents[1]}")
 
 from src.utilities.database import Database
 
@@ -36,7 +39,7 @@ def load_dataset(
         if acquisition.dataset_id == image_label:
             image_id = acquisition.id
     if image_id is None:
-        return ValueError("Image id not available")
+        raise ValueError("Image id not available")
 
     wavelengths = database.wavelengths(image_id=image_id)
     idx_min = np.argwhere(wavelengths > wavelengths_limits[0])[0][0]
@@ -158,17 +161,17 @@ def generate_rgb_array(
 
 def main():
     parser = argparse.ArgumentParser(description="Represents a hyperspectral dataset as a RGB image. Usage: python src/hsi2rgb.py --i ""pavia""")
-    parser.add_argument("--i", type=str, nargs="+", help="Image identifier", default="pavia")
-    parser.add_argument("--x", type=tuple[int, int], nargs="+", help="Cropping interval in the horizontal direction.", default=None)
-    parser.add_argument("--y", type=tuple[int, int], nargs="+", help="Cropping interval in the vertical direction.", default=None)
-    parser.add_argument("--v", type=bool, nargs="+", help="Visualizes the RGB result.", default=True)
-    parser.add_argument("--s", type=bool, nargs="+", help="Saves the results to data/outputs.", default=True)
+    parser.add_argument("--i", type=str, help="Image identifier", default="pavia")
+    parser.add_argument("--x", type=int, nargs=2, help="Cropping interval in the horizontal direction.", default=None)
+    parser.add_argument("--y", type=int, nargs=2, help="Cropping interval in the vertical direction.", default=None)
+    parser.add_argument("--v", type=bool, help="Visualizes the RGB result.", default=True)
+    parser.add_argument("--s", type=bool, help="Saves the results to data/outputs.", default=True)
     args = parser.parse_args()
 
     generate_rgb_array(
         image_label=args.i,
-        crop_x=args.x,
-        crop_y=args.y,
+        crop_x=(args.x[0], args.x[1]),
+        crop_y=(args.y[0], args.y[1]),
         visualize=args.v,
         save=args.s,
     )
