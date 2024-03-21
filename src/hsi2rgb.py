@@ -160,7 +160,7 @@ def generate_rgb_array(
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Represents a hyperspectral dataset as a RGB image. Usage: python src/hsi2rgb.py --i ""pavia""")
+    parser = argparse.ArgumentParser(description="Represents a hyperspectral dataset as a RGB image. Usage: python src/hsi2rgb.py -i ""pavia""")
     parser.add_argument("-i", "--i", "--image", type=str, help="Image identifier", default="pavia")
     parser.add_argument("-x", "--x", "--x_crop", type=int, nargs=2, help="Cropping interval in the horizontal direction.", default=None)
     parser.add_argument("-y", "--y", "--y_crop", type=int, nargs=2, help="Cropping interval in the vertical direction.", default=None)
