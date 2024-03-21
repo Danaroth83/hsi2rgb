@@ -173,8 +173,8 @@ def main():
 
     generate_rgb_array(
         image_label=args.i,
-        crop_x=(args.x[0], args.x[1]),
-        crop_y=(args.y[0], args.y[1]),
+        crop_x=crop_x,
+        crop_y=crop_y,
         visualize=args.v,
         save=args.s,
     )
