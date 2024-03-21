@@ -161,12 +161,15 @@ def generate_rgb_array(
 
 def main():
     parser = argparse.ArgumentParser(description="Represents a hyperspectral dataset as a RGB image. Usage: python src/hsi2rgb.py --i ""pavia""")
-    parser.add_argument("--i", type=str, help="Image identifier", default="pavia")
-    parser.add_argument("--x", type=int, nargs=2, help="Cropping interval in the horizontal direction.", default=None)
-    parser.add_argument("--y", type=int, nargs=2, help="Cropping interval in the vertical direction.", default=None)
-    parser.add_argument("--v", type=bool, help="Visualizes the RGB result.", default=True)
-    parser.add_argument("--s", type=bool, help="Saves the results to data/outputs.", default=True)
+    parser.add_argument("-i", "--i", "--image", type=str, help="Image identifier", default="pavia")
+    parser.add_argument("-x", "--x", "--x_crop", type=int, nargs=2, help="Cropping interval in the horizontal direction.", default=None)
+    parser.add_argument("-y", "--y", "--y_crop", type=int, nargs=2, help="Cropping interval in the vertical direction.", default=None)
+    parser.add_argument("-v", "--v", "--verbose", type=bool, help="Visualizes the RGB result.", default=True)
+    parser.add_argument("-s", "--s", "--save", type=bool, help="Saves the results to data/outputs.", default=True)
     args = parser.parse_args()
+
+    crop_x = None if args.x is None else (args.x[0], args.x[1])
+    crop_y = None if args.y is None else (args.y[0], args.y[1])
 
     generate_rgb_array(
         image_label=args.i,

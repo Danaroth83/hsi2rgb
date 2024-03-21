@@ -11,7 +11,7 @@ This library requires Python 3.9+; the dependencies can be installed using:
 
 Then the script can be launched by running the following line in the terminal:
 
-```python src/hsi2rgb.py --i "pavia"```
+```python src/hsi2rgb.py -i "pavia"```
 
 where ```"pavia"``` is an example of a dataset name. The user can choose any of the datasets listed in the "Dataset list" section.
 The script will download the raw dataset in the folder ```data/external```
@@ -27,7 +27,7 @@ The generated numpy arrays are listed below:
 It is also possible to generate a cropped version of the rgb image, which is useful when the original datasets are too large.
 For example:
 
-```python src/hsi2rgb.py --i "chikusei" --x 200 712 --y 200 712```
+```python src/hsi2rgb.py -i "chikusei" -x 200 712 -y 200 712```
 
 crops the ```"chikusei"``` dataset in the coordinates ranges given by the ```--x``` and ```--y``` options, that is ```(200, 712)``` in both cases.
 
